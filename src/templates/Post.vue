@@ -1,15 +1,20 @@
 <template>
   <BlogLayout>
-    <div class="markdown-body" v-html="$page.post.content" />
+    <div class="markdown-body">
+      <h1>{{$page.post.title }}</h1>
+      <img :src="$page.post.featuredImage" :alt="$page.post.title" />
+      <div v-html="$page.post.content" />
+    </div>
   </BlogLayout>
 </template>
 
 <page-query>
-  query Post($path: String!) {
+  query Post ($path: String!) {
     post: post (path: $path) {
       title
-      content      
-    }
+      content
+      featuredImage
+      }
   }
 </page-query>
 
@@ -17,8 +22,8 @@
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title,
+      title: this.$page.post.title
     };
-  },
+  }
 };
 </script>

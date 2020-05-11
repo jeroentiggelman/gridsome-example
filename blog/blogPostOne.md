@@ -1,5 +1,6 @@
 ---
 title: Blog Post One
+featuredImage: /uploads/au-contraire-1.jpg
 ---
 
 # Blog Post One
