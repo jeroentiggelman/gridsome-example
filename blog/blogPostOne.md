@@ -1,6 +1,6 @@
 ---
 title: Blog Post One
-featuredImage: /uploads/au-contraire-1.jpg
+featuredImage: /uploads/au-contraire_2jt6524.jpg
 ---
 
 # Blog Post One
